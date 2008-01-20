@@ -22,9 +22,9 @@ $ tar -xjf ~/cs-e9302_root2.tar.gz
 $ umount /mnt
 }}}
 
-You should use the following boot arguments if you want to use your MMC/SD card as root filesystem:
-
 = Booting from the card =
+
+You should use the following boot arguments if you want to use your MMC/SD card as root filesystem:
 
 {{{
 console=ttyAM root=/dev/mmcblk0p1 rootdelay=5
