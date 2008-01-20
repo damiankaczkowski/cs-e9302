@@ -1,5 +1,5 @@
 #summary How to patch and compile the Linux kernel for CS-E9302
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 
 = Introduction =
 
