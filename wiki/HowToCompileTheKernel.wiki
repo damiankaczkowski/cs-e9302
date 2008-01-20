@@ -7,12 +7,12 @@ This how-to describes Linux patching and compiling.
 
 = Details =
 
-# Download the Linux kernel and the patch (in the example the "wget" is used to download)
-# Unpack kernel
-# Apply patch
-# Copy the default kernel configuration to .config
-# Apply kernel configuration
-# Compile kernel
+  # Download the Linux kernel and the patch (in the example the "wget" is used to download)
+  # Unpack kernel
+  # Apply patch
+  # Copy the default kernel configuration to .config
+  # Apply kernel configuration
+  # Compile kernel
 {{{
 $ wget http://www.kernel.org/pub/linux/kernel/v2.6/testing/linux-2.6.24-rc8.tar.bz2
 $ wget http://dev.ivanov.eu/projects/cs-e9302/linux-2.6.24-rc8_ep93xx_mmc.patch.gz
