@@ -1,0 +1,33 @@
+#summary How to patch and compile the Linux kernel for CS-E9302
+#labels Phase-Deploy
+
+= Introduction =
+
+This how-to describes Linux patching and compiling.
+
+= Details =
+
+# Download the Linux kernel and the patch (in the example the "wget" is used to download)
+# Unpack kernel
+# Apply patch
+# Copy the default kernel configuration to .config
+# Apply kernel configuration
+# Compile kernel
+{{{
+$ wget http://www.kernel.org/pub/linux/kernel/v2.6/testing/linux-2.6.24-rc8.tar.bz2
+$ wget http://dev.ivanov.eu/projects/cs-e9302/linux-2.6.24-rc8_ep93xx_mmc.patch.gz
+$ tar -xjf linux-2.6.24-rc8.tar.bz2
+$ cd linux-2.6.24-rc8/
+$ zcat ../linux-2.6.24-rc8_ep93xx_mmc.patch.gz|patch -p1
+patching file arch/arm/mach-ep93xx/core.c
+patching file cs-e9302_kernel_config
+patching file drivers/net/arm/ep93xx_eth.c
+patching file drivers/net/arm/ep93xx_eth.h
+patching file drivers/spi/Kconfig
+patching file drivers/spi/Makefile
+patching file drivers/spi/spi_ep93xx.c
+patching file include/asm-arm/arch-ep93xx/ep93xx-regs.h
+$ cp cs-e9302_kernel_config .config
+$ make ARCH=arm oldconfig
+$ make ARCH=arm CROSS_COMPILE=arm-linux- uImage
+}}}
