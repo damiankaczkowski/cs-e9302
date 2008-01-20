@@ -1,0 +1,31 @@
+#summary How to copy and boot the Debian GNU/Linux root filesystem from MMC/SD card
+#labels Phase-Deploy,Featured
+
+= Introduction =
+
+To boot your CS-E9302 from an MMC or SD card you need at least 512M card. Before proceeding the following steps create a backup of your memory card! *All data will be erased!*
+
+
+= Steps to prepare the MMC/SD card =
+
+  # Backup your MMC/SD card. All files will be deleted!
+  # Download, unpack the root filesystem: http://dev.ivanov.eu/projects/cs-e9302/cs-e9302_root2.tar.gz
+  # Mount card and untar package.
+  # Umount card.
+
+{{{
+$ wget http://dev.ivanov.eu/projects/cs-e9302/cs-e9302_root2.tar.gz
+$ mkfs.ext3 -L root /dev/sdb1
+$ mount /dev/sdb1 /mnt
+$ cd /mnt
+$ tar -xjf ~/cs-e9302_root2.tar.gz
+$ umount /mnt
+}}}
+
+You should use the following boot arguments if you want to use your MMC/SD card as root filesystem:
+
+= Booting from the card =
+
+{{{
+console=ttyAM root=/dev/mmcblk0p1 rootdelay=5
+}}}
