@@ -3,4 +3,4 @@
 
 = Q: Where can I download root filesystem? =
 
-A: I cannot upload images larger than 20 MB to Google Code . Thus you can download it only fr om my homepage: http://dev.ivanov.eu/projects/cs-e9302/cs-e9302_root2.tar.gz
+A: I cannot upload images larger than 20 MB to Google Code. Thus you can download it only from my homepage: http://dev.ivanov.eu/projects/cs-e9302/cs-e9302_root2.tar.gz
