@@ -8,6 +8,7 @@ This how-to describes Linux patching and compiling.
 = Pre-requisite =
 
 Cirrus Logic's GCC compiler downloaded and installed: http://arm.cirrus.com/files/tools/arm-linux-gcc-4.1.1-920t.tar.bz2
+
 I used Debian GNU/Linux 4.0 Etch, but other Linux distributions should work.
 
 = Details =
