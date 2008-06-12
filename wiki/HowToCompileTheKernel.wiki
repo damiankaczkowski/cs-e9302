@@ -7,7 +7,7 @@ This how-to describes Linux patching and compiling.
 
 = Requirements =
 
-Cirrus Logic's GCC compiler downloaded and installed: http://arm.cirrus.com/files/tools/arm-linux-gcc-4.1.1-920t.tar.bz2 or ELDK 4.0 http://www.denx.de/wiki/view/DULG/ELDKAvailability
+Cirrus Logic's GCC compiler downloaded and installed (http://arm.cirrus.com/files/tools/arm-linux-gcc-4.1.1-920t.tar.bz2) or ELDK >= 4.0 (http://www.denx.de/wiki/view/DULG/ELDKAvailability http://ftp.sunet.se/pub/Linux/distributions/eldk/4.1/arm-linux-x86/iso/arm-2007-01-21.iso)
 
 I used Debian GNU/Linux 4.0 Etch, but other Linux distributions should work.
 
